@@ -1,0 +1,2848 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/1/2019 11:03:32 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="EQUIPOMONY"
+  DTS:CreatorName="EQUIPOMONY\monica"
+  DTS:DTSID="{1A8008FD-7529-4B23-BA7E-0C907B403A52}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.1301.433"
+  DTS:LocaleID="11274"
+  DTS:ObjectName="Tiempo"
+  DTS:PackageType="5"
+  DTS:VersionBuild="49"
+  DTS:VersionGUID="{FB84C919-D464-4112-9A77-A5728262271F}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{98E8C4F4-9A8F-4CB1-ADB5-BE9372DE626E}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\clientes.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Id"
+              DTS:DTSID="{9CF819E1-BBF0-41C9-A456-EE9F50EF7142}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Nombre"
+              DTS:DTSID="{ABA0F964-459C-44C3-832F-1F274AF23A0F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Apellido1"
+              DTS:DTSID="{E0B1D013-9E95-4426-A3A6-4824AC3BF835}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Apellido2"
+              DTS:DTSID="{59E60AE6-7757-4EA1-874E-19F00439322F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Sexo"
+              DTS:DTSID="{7854461A-B369-4A06-AA70-6528215B96F6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Direccion"
+              DTS:DTSID="{16FB091F-9D5C-4FB6-855E-5D280E66E3E8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Municipio"
+              DTS:DTSID="{D7F03AEA-DCDD-4FED-A48D-8FF89E8BDE12}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Provincia"
+              DTS:DTSID="{C3907C92-579C-489C-9DF3-60772625818E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Cp"
+              DTS:DTSID="{DCF48C1B-2EE2-4640-91D4-D4AABE160228}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Movil"
+              DTS:DTSID="{3E4BE2F2-9B3F-4668-A226-AF675A35111C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="20"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Telefono"
+              DTS:DTSID="{8C8F4910-250B-41D4-9F96-D666C97C5D4A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Correo"
+              DTS:DTSID="{207F33BC-FF7E-4371-B135-ED4DF15FD880}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Nacimiento"
+              DTS:DTSID="{6ADDAB7B-FF6C-40F3-B2E3-D949D0B6B598}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Error Data]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{B54FDBF4-D23F-43FF-B862-5F3D770692FF}"
+      DTS:ObjectName="Error Data">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\monica\Documents\BI\Lab2-2\ErrorOutput-DimTiempo.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TiempoKey"
+              DTS:DTSID="{BDE7018F-802B-4754-905C-97DD6181AA85}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NumeroDiaDelAnio"
+              DTS:DTSID="{6762243E-A944-4C25-9299-218FFC77D1C0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NumeroDiaDeLaSemana"
+              DTS:DTSID="{E7AD5552-5DDF-4156-A15E-E51E0909C078}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NumeroSemanaDelAnio"
+              DTS:DTSID="{0044F440-62F8-4598-9C1B-3F2701EE085A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Mes"
+              DTS:DTSID="{7404148F-6365-4BDC-9224-FB02653A19A5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NombreMes"
+              DTS:DTSID="{963878CA-5288-457B-8242-06209D25366F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Cuatrimestre"
+              DTS:DTSID="{2C0B9B29-CB1E-4D4C-B6B5-591610E9BB48}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Anio"
+              DTS:DTSID="{63FC60BC-C823-433D-AF69-772149268B14}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NombreDiaDeLaSemana"
+              DTS:DTSID="{766B6428-8888-43A6-960F-636B6A515427}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Dia"
+              DTS:DTSID="{9EA224F9-256E-4E76-9BE4-3D3FC4F26A81}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{8EF24059-CE87-4F37-9081-7F99CC0D2E4B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{3EDEF32F-7EB7-4920-ACEB-4B32B4765A32}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorDescription"
+              DTS:DTSID="{3425BF87-7E18-4E39-B4CC-BBE9107E740E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Error Data DimTiempo]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{A705B7B0-CDDE-4349-B211-4DE5BB8E7237}"
+      DTS:ObjectName="Error Data DimTiempo">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\monica\Documents\BI\Lab2-2\ErrorOutput-DimTiempo.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="o_entry_d"
+              DTS:DTSID="{67B08F41-D118-47CF-A649-873DA9BF54F4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{5C5CDC24-89CE-419D-9122-D2AFF3905570}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{1C9FBBC2-177C-4AF2-8D03-8513966C07D3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorDescription"
+              DTS:DTSID="{A7BF667B-47AF-46C8-BA4C-DF59CE0DE736}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost\SQL17.AdventureWorksDW]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{25215067-0400-409A-A0E6-10253C74B3A9}"
+      DTS:ObjectName="localhost\SQL17.AdventureWorksDW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost\SQL17;Initial Catalog=AdventureWorksDW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost\SQL17.AdventureWorksDW2017]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{6551EF83-2AB2-49E9-9DC8-7A6D9DAD0029}"
+      DTS:ObjectName="localhost\SQL17.AdventureWorksDW2017">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost\SQL17;Initial Catalog=TPC_DW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost\SQL17.tpcc]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{2173B06E-4FC2-4DE2-9E6B-AB613C982638}"
+      DTS:ObjectName="localhost\SQL17.tpcc">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost\SQL17;Initial Catalog=tpcc;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost\SQL17.TPC_DW]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{38567482-EB69-496A-88A9-7917FAF745E2}"
+      DTS:ObjectName="localhost\SQL17.TPC_DW">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=localhost\SQL17;Initial Catalog=TPC_DW;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Sample Flat File Source Data]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{4168E37B-2E04-425E-BC6F-9BDA26C11242}"
+      DTS:ObjectName="Sample Flat File Source Data">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="C:\clientes.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Id"
+              DTS:DTSID="{77CBCD2D-7405-47DC-8692-D078696210B0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="16"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Nombre"
+              DTS:DTSID="{4DCD2E4C-7545-4658-B05E-8094B1ED0FA0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="12"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Apellido1"
+              DTS:DTSID="{D0606014-5296-49D5-8DCA-B51988BA8607}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Apellido2"
+              DTS:DTSID="{07CC4F8B-FA53-4CF3-9CDB-9BCD4CBA5C44}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Columna 0"
+              DTS:DTSID="{EA04F0FE-D7ED-40C3-8E0B-6AD755D3A62F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Aplicar Staged Deletes"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{154779CA-DD09-4E46-94AB-58B5767CAFF9}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Aplicar Staged Deletes"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{38567482-EB69-496A-88A9-7917FAF745E2}"
+          SQLTask:SqlStatementSource="Delete src&#xA; From DimTiempo src&#xA;   Join StageDeletes_Tiempo stage&#xA;     On stage.TiempoKey = src.TiempoKey" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Aplicar Staged Updates"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{7A12CF37-25EE-4441-BA02-2AA9233D45F1}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Aplicar Staged Updates"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{38567482-EB69-496A-88A9-7917FAF745E2}"
+          SQLTask:SqlStatementSource="Update dest&#xA;Set dest.NombreMes = stage.NombreMes&#xA;  , dest.NombreDiaDeLaSemana = stage.NombreDiaDeLaSemana&#xA;  , dest.Dia = stage.Dia&#xA;  , dest.Mes = stage.Mes&#xA;  , dest.Cuatrimestre = stage.Cuatrimestre&#xA;  , dest.Anio = stage.Anio&#xA;  , dest.NumeroDiaDelAnio = stage.NumeroDiaDelAnio&#xA;  , dest.NumeroSemanaDelAnio = stage.NumeroSemanaDelAnio&#xA;  , dest.NumeroDiaDeLaSemana = stage.NumeroDiaDeLaSemana&#xA; From [dbo].[DimTiempo] dest&#xA;   Join dbo.StageUpdates_Tiempo stage&#xA;    On stage.[Origen de OLE DB.TiempoKey] = dest.TiempoKey" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Delete Rows"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{4E03948F-8969-49DC-AEF4-4615ADB2A515}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Delete Rows"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Delete Rows\Búsqueda"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Búsqueda;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;6"
+              description="Combina columnas adicionales con el flujo de datos mediante la búsqueda de valores en una tabla. Por ejemplo, se combina la columna 'id. de empleado' con la tabla de empleados para obtener la 'fecha de contratación' y 'el nombre de empleado'. Se recomienda esta transformación cuando hay suficiente espacio en memoria para la tabla de búsqueda."
+              name="Búsqueda"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Especifica la instrucción SQL que genera la tabla de búsqueda."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT DISTINCT CONVERT(DATE, o_entry_d) AS 'TiempoKey'
+FROM orders</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica una instrucción SQL que usa parámetros para generar la tabla de búsqueda."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (SELECT DISTINCT CONVERT(DATE, o_entry_d) AS 'TiempoKey'
+FROM orders) [refTable]
+where [refTable].[TiempoKey] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el tipo de conexión utilizado para tener acceso al conjunto de datos de referencia."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el tipo de caché de la tabla de búsqueda."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cómo la transformación de búsquedas trata las filas sin entradas coincidentes en el conjunto de datos de referencia."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el porcentaje de la caché asignado a las filas sin entradas coincidentes en el conjunto de datos de referencia."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Uso de memoria máximo para la caché de referencia en una plataforma de 32 bits."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Uso de memoria máximo para la caché de referencia en una plataforma de 64 bits."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indica si se debe hacer referencia a metadatos en formato XML."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="TiempoKey" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Especifica la lista de identificadores de linaje que están asignados a los parámetros que usa la instrucción SQL de la propiedad SQLCommand. Las entradas de la lista están separadas por puntos y comas."
+                  name="ParameterMap">#{Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[TiempoKey]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determina si las claves duplicadas de los datos de referencia se deben tratar como errores cuando se usa el modo de caché."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Delete Rows\Búsqueda.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost\SQL17.tpcc]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost\SQL17.tpcc]"
+                  description="Administrador de conexiones utilizado para obtener acceso a los datos de búsqueda."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Delete Rows\Búsqueda.Inputs[Entrada de búsqueda]"
+                  name="Entrada de búsqueda">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Delete Rows\Búsqueda.Inputs[Entrada de búsqueda].Columns[TiempoKey]"
+                      cachedDataType="dbDate"
+                      cachedName="TiempoKey"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[TiempoKey]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Especifica la columna de la tabla de referencia con la que se combina una columna."
+                          name="JoinToReferenceColumn">TiempoKey</property>
+                        <property
+                          dataType="System.Null"
+                          description="Especifica la columna de la tabla de referencia de la que se copia una columna."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Delete Rows\Búsqueda.Outputs[Salida de entradas coincidentes de búsqueda]"
+                  errorOrTruncationOperation="Búsqueda"
+                  exclusionGroup="1"
+                  name="Salida de entradas coincidentes de búsqueda"
+                  synchronousInputId="Package\Delete Rows\Búsqueda.Inputs[Entrada de búsqueda]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Delete Rows\Búsqueda.Outputs[Salida de entradas no coincidentes de búsqueda]"
+                  description="Salida de búsqueda que trata las filas sin entradas coincidentes en el conjunto de datos de referencia. Utilice esta salida cuando la propiedad NoMatchBehavior esté establecida en 'Enviar las filas sin entradas coincidentes a la salida de entradas no coincidentes'."
+                  exclusionGroup="1"
+                  name="Salida de entradas no coincidentes de búsqueda"
+                  synchronousInputId="Package\Delete Rows\Búsqueda.Inputs[Entrada de búsqueda]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Delete Rows\Búsqueda.Outputs[Salida de error de búsqueda]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de búsqueda"
+                  synchronousInputId="Package\Delete Rows\Búsqueda.Inputs[Entrada de búsqueda]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Delete Rows\Búsqueda.Outputs[Salida de error de búsqueda].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Delete Rows\Búsqueda.Outputs[Salida de error de búsqueda].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Delete Rows\Búsqueda.Outputs[Salida de error de búsqueda].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Delete Rows\Búsqueda.Outputs[Salida de error de búsqueda].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Delete Rows\Origen de OLE DB"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
+              description="Origen de OLE DB"
+              name="Origen de OLE DB"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[DimTiempo]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="Variable que contiene el comando SQL para ejecutar."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Asignaciones entre los parámetros del comando SQL y las variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Delete Rows\Origen de OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost\SQL17.TPC_DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost\SQL17.TPC_DW]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB]"
+                  name="Salida de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NombreMes]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[NombreMes]"
+                      length="30"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NombreMes]"
+                      name="NombreMes"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NombreDiaDeLaSemana]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[NombreDiaDeLaSemana]"
+                      length="20"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NombreDiaDeLaSemana]"
+                      name="NombreDiaDeLaSemana"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Dia]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Dia]"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Dia]"
+                      name="Dia"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Mes]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Mes]"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Mes]"
+                      name="Mes"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Cuatrimestre]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Cuatrimestre]"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Cuatrimestre]"
+                      name="Cuatrimestre"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Anio]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Anio]"
+                      length="4"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Anio]"
+                      name="Anio"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroDiaDelAnio]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[NumeroDiaDelAnio]"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroDiaDelAnio]"
+                      name="NumeroDiaDelAnio"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroSemanaDelAnio]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[NumeroSemanaDelAnio]"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroSemanaDelAnio]"
+                      name="NumeroSemanaDelAnio"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroDiaDeLaSemana]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[NumeroDiaDeLaSemana]"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroDiaDeLaSemana]"
+                      name="NumeroDiaDeLaSemana"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[TiempoKey]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[TiempoKey]"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[TiempoKey]"
+                      name="TiempoKey"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[NombreMes]"
+                      dataType="wstr"
+                      length="30"
+                      name="NombreMes" />
+                    <externalMetadataColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[NombreDiaDeLaSemana]"
+                      dataType="wstr"
+                      length="20"
+                      name="NombreDiaDeLaSemana" />
+                    <externalMetadataColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Dia]"
+                      dataType="ui1"
+                      name="Dia" />
+                    <externalMetadataColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Mes]"
+                      dataType="ui1"
+                      name="Mes" />
+                    <externalMetadataColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Cuatrimestre]"
+                      dataType="ui1"
+                      name="Cuatrimestre" />
+                    <externalMetadataColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Anio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="Anio" />
+                    <externalMetadataColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[NumeroDiaDelAnio]"
+                      dataType="i2"
+                      name="NumeroDiaDelAnio" />
+                    <externalMetadataColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[NumeroSemanaDelAnio]"
+                      dataType="ui1"
+                      name="NumeroSemanaDelAnio" />
+                    <externalMetadataColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[NumeroDiaDeLaSemana]"
+                      dataType="ui1"
+                      name="NumeroDiaDeLaSemana" />
+                    <externalMetadataColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[TiempoKey]"
+                      dataType="dbDate"
+                      name="TiempoKey" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[NombreMes]"
+                      dataType="wstr"
+                      length="30"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[NombreMes]"
+                      name="NombreMes" />
+                    <outputColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[NombreDiaDeLaSemana]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[NombreDiaDeLaSemana]"
+                      name="NombreDiaDeLaSemana" />
+                    <outputColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Dia]"
+                      dataType="ui1"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Dia]"
+                      name="Dia" />
+                    <outputColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Mes]"
+                      dataType="ui1"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Mes]"
+                      name="Mes" />
+                    <outputColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Cuatrimestre]"
+                      dataType="ui1"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Cuatrimestre]"
+                      name="Cuatrimestre" />
+                    <outputColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Anio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Anio]"
+                      name="Anio" />
+                    <outputColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[NumeroDiaDelAnio]"
+                      dataType="i2"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[NumeroDiaDelAnio]"
+                      name="NumeroDiaDelAnio" />
+                    <outputColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[NumeroSemanaDelAnio]"
+                      dataType="ui1"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[NumeroSemanaDelAnio]"
+                      name="NumeroSemanaDelAnio" />
+                    <outputColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[NumeroDiaDeLaSemana]"
+                      dataType="ui1"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[NumeroDiaDeLaSemana]"
+                      name="NumeroDiaDeLaSemana" />
+                    <outputColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[TiempoKey]"
+                      dataType="dbDate"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[TiempoKey]"
+                      name="TiempoKey" />
+                    <outputColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Delete Rows\StageDeletes"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino de OLE DB"
+              name="StageDeletes"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[StageDeletes_Tiempo]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Delete Rows\StageDeletes.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost\SQL17.TPC_DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost\SQL17.TPC_DW]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB]"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].Columns[NombreMes]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="NombreMes"
+                      externalMetadataColumnId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].ExternalColumns[NombreMes]"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NombreMes]" />
+                    <inputColumn
+                      refId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].Columns[NombreDiaDeLaSemana]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="NombreDiaDeLaSemana"
+                      externalMetadataColumnId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].ExternalColumns[NombreDiaDeLaSemana]"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NombreDiaDeLaSemana]" />
+                    <inputColumn
+                      refId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].Columns[Dia]"
+                      cachedDataType="ui1"
+                      cachedName="Dia"
+                      externalMetadataColumnId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Dia]"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Dia]" />
+                    <inputColumn
+                      refId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].Columns[Mes]"
+                      cachedDataType="ui1"
+                      cachedName="Mes"
+                      externalMetadataColumnId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Mes]"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Mes]" />
+                    <inputColumn
+                      refId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].Columns[Cuatrimestre]"
+                      cachedDataType="ui1"
+                      cachedName="Cuatrimestre"
+                      externalMetadataColumnId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Cuatrimestre]"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Cuatrimestre]" />
+                    <inputColumn
+                      refId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].Columns[Anio]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="4"
+                      cachedName="Anio"
+                      externalMetadataColumnId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Anio]"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Anio]" />
+                    <inputColumn
+                      refId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].Columns[NumeroDiaDelAnio]"
+                      cachedDataType="i2"
+                      cachedName="NumeroDiaDelAnio"
+                      externalMetadataColumnId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumeroDiaDelAnio]"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroDiaDelAnio]" />
+                    <inputColumn
+                      refId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].Columns[NumeroSemanaDelAnio]"
+                      cachedDataType="ui1"
+                      cachedName="NumeroSemanaDelAnio"
+                      externalMetadataColumnId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumeroSemanaDelAnio]"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroSemanaDelAnio]" />
+                    <inputColumn
+                      refId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].Columns[NumeroDiaDeLaSemana]"
+                      cachedDataType="ui1"
+                      cachedName="NumeroDiaDeLaSemana"
+                      externalMetadataColumnId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumeroDiaDeLaSemana]"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroDiaDeLaSemana]" />
+                    <inputColumn
+                      refId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].Columns[TiempoKey]"
+                      cachedDataType="dbDate"
+                      cachedName="TiempoKey"
+                      externalMetadataColumnId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].ExternalColumns[TiempoKey]"
+                      lineageId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[TiempoKey]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].ExternalColumns[NombreMes]"
+                      dataType="wstr"
+                      length="30"
+                      name="NombreMes" />
+                    <externalMetadataColumn
+                      refId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].ExternalColumns[NombreDiaDeLaSemana]"
+                      dataType="wstr"
+                      length="20"
+                      name="NombreDiaDeLaSemana" />
+                    <externalMetadataColumn
+                      refId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Dia]"
+                      dataType="ui1"
+                      name="Dia" />
+                    <externalMetadataColumn
+                      refId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Mes]"
+                      dataType="ui1"
+                      name="Mes" />
+                    <externalMetadataColumn
+                      refId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Cuatrimestre]"
+                      dataType="ui1"
+                      name="Cuatrimestre" />
+                    <externalMetadataColumn
+                      refId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].ExternalColumns[Anio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="Anio" />
+                    <externalMetadataColumn
+                      refId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumeroDiaDelAnio]"
+                      dataType="i2"
+                      name="NumeroDiaDelAnio" />
+                    <externalMetadataColumn
+                      refId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumeroSemanaDelAnio]"
+                      dataType="ui1"
+                      name="NumeroSemanaDelAnio" />
+                    <externalMetadataColumn
+                      refId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumeroDiaDeLaSemana]"
+                      dataType="ui1"
+                      name="NumeroDiaDeLaSemana" />
+                    <externalMetadataColumn
+                      refId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB].ExternalColumns[TiempoKey]"
+                      dataType="dbDate"
+                      name="TiempoKey" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Delete Rows\StageDeletes.Outputs[Salida de error de destino de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de OLE DB"
+                  synchronousInputId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Delete Rows\StageDeletes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Delete Rows\StageDeletes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Delete Rows\StageDeletes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Delete Rows\StageDeletes.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Delete Rows.Paths[Salida de entradas no coincidentes de búsqueda]"
+              endId="Package\Delete Rows\StageDeletes.Inputs[Entrada de destino de OLE DB]"
+              name="Salida de entradas no coincidentes de búsqueda"
+              startId="Package\Delete Rows\Búsqueda.Outputs[Salida de entradas no coincidentes de búsqueda]" />
+            <path
+              refId="Package\Delete Rows.Paths[Salida de origen de OLE DB]"
+              endId="Package\Delete Rows\Búsqueda.Inputs[Entrada de búsqueda]"
+              name="Salida de origen de OLE DB"
+              startId="Package\Delete Rows\Origen de OLE DB.Outputs[Salida de origen de OLE DB]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Extract Sample Currency Data"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{CB866D8D-35A4-42C2-AC6C-7E7EDB8B00BC}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="1033"
+      DTS:ObjectName="Extract Sample Currency Data"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Extract Sample Currency Data\Búsqueda Duplicado"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Búsqueda;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;6"
+              description="Combina columnas adicionales con el flujo de datos mediante la búsqueda de valores en una tabla. Por ejemplo, se combina la columna 'id. de empleado' con la tabla de empleados para obtener la 'fecha de contratación' y 'el nombre de empleado'. Se recomienda esta transformación cuando hay suficiente espacio en memoria para la tabla de búsqueda."
+              name="Búsqueda Duplicado"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Especifica la instrucción SQL que genera la tabla de búsqueda."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [dbo].[DimTiempo]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica una instrucción SQL que usa parámetros para generar la tabla de búsqueda."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [dbo].[DimTiempo]) [refTable]
+where [refTable].[TiempoKey] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el tipo de conexión utilizado para tener acceso al conjunto de datos de referencia."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el tipo de caché de la tabla de búsqueda."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cómo la transformación de búsquedas trata las filas sin entradas coincidentes en el conjunto de datos de referencia."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el porcentaje de la caché asignado a las filas sin entradas coincidentes en el conjunto de datos de referencia."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Uso de memoria máximo para la caché de referencia en una plataforma de 32 bits."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Uso de memoria máximo para la caché de referencia en una plataforma de 64 bits."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indica si se debe hacer referencia a metadatos en formato XML."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="NombreMes" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="NombreDiaDeLaSemana" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Dia" dataType="DT_UI1" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Mes" dataType="DT_UI1" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Cuatrimestre" dataType="DT_UI1" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Anio" dataType="DT_STR" length="4" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="NumeroDiaDelAnio" dataType="DT_I2" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="NumeroSemanaDelAnio" dataType="DT_UI1" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="NumeroDiaDeLaSemana" dataType="DT_UI1" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="TiempoKey" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Especifica la lista de identificadores de linaje que están asignados a los parámetros que usa la instrucción SQL de la propiedad SQLCommand. Las entradas de la lista están separadas por puntos y comas."
+                  name="ParameterMap">#{Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[TiempoKey]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determina si las claves duplicadas de los datos de referencia se deben tratar como errores cuando se usa el modo de caché."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost\SQL17.TPC_DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost\SQL17.TPC_DW]"
+                  description="Administrador de conexiones utilizado para obtener acceso a los datos de búsqueda."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Inputs[Entrada de búsqueda]"
+                  name="Entrada de búsqueda">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Inputs[Entrada de búsqueda].Columns[TiempoKey]"
+                      cachedDataType="dbDate"
+                      cachedName="TiempoKey"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[TiempoKey]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Especifica la columna de la tabla de referencia con la que se combina una columna."
+                          name="JoinToReferenceColumn">TiempoKey</property>
+                        <property
+                          dataType="System.Null"
+                          description="Especifica la columna de la tabla de referencia de la que se copia una columna."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda]"
+                  errorOrTruncationOperation="Búsqueda"
+                  exclusionGroup="1"
+                  name="Salida de entradas coincidentes de búsqueda"
+                  synchronousInputId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Inputs[Entrada de búsqueda]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NombreMes]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copiar columna"
+                      length="30"
+                      lineageId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NombreMes]"
+                      name="LkUp_NombreMes"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Especifica la columna de la tabla de referencia de la que se copia una columna."
+                          name="CopyFromReferenceColumn">NombreMes</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NombreDiaDeLaSemana]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copiar columna"
+                      length="20"
+                      lineageId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NombreDiaDeLaSemana]"
+                      name="LkUp_NombreDiaDeLaSemana"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Especifica la columna de la tabla de referencia de la que se copia una columna."
+                          name="CopyFromReferenceColumn">NombreDiaDeLaSemana</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_Dia]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Copiar columna"
+                      lineageId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_Dia]"
+                      name="LkUp_Dia"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Especifica la columna de la tabla de referencia de la que se copia una columna."
+                          name="CopyFromReferenceColumn">Dia</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_Mes]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Copiar columna"
+                      lineageId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_Mes]"
+                      name="LkUp_Mes"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Especifica la columna de la tabla de referencia de la que se copia una columna."
+                          name="CopyFromReferenceColumn">Mes</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_Cuatrimestre]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Copiar columna"
+                      lineageId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_Cuatrimestre]"
+                      name="LkUp_Cuatrimestre"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Especifica la columna de la tabla de referencia de la que se copia una columna."
+                          name="CopyFromReferenceColumn">Cuatrimestre</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_Anio]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copiar columna"
+                      length="4"
+                      lineageId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_Anio]"
+                      name="LkUp_Anio"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Especifica la columna de la tabla de referencia de la que se copia una columna."
+                          name="CopyFromReferenceColumn">Anio</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NumeroDiaDelAnio]"
+                      dataType="i2"
+                      errorOrTruncationOperation="Copiar columna"
+                      lineageId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NumeroDiaDelAnio]"
+                      name="LkUp_NumeroDiaDelAnio"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Especifica la columna de la tabla de referencia de la que se copia una columna."
+                          name="CopyFromReferenceColumn">NumeroDiaDelAnio</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NumeroSemanaDelAnio]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Copiar columna"
+                      lineageId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NumeroSemanaDelAnio]"
+                      name="LkUp_NumeroSemanaDelAnio"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Especifica la columna de la tabla de referencia de la que se copia una columna."
+                          name="CopyFromReferenceColumn">NumeroSemanaDelAnio</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NumeroDiaDeLaSemana]"
+                      dataType="ui1"
+                      errorOrTruncationOperation="Copiar columna"
+                      lineageId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NumeroDiaDeLaSemana]"
+                      name="LkUp_NumeroDiaDeLaSemana"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Especifica la columna de la tabla de referencia de la que se copia una columna."
+                          name="CopyFromReferenceColumn">NumeroDiaDeLaSemana</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[TiempoKey]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Copiar columna"
+                      lineageId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[TiempoKey]"
+                      name="TiempoKey"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Especifica la columna de la tabla de referencia de la que se copia una columna."
+                          name="CopyFromReferenceColumn">TiempoKey</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas no coincidentes de búsqueda]"
+                  description="Salida de búsqueda que trata las filas sin entradas coincidentes en el conjunto de datos de referencia. Utilice esta salida cuando la propiedad NoMatchBehavior esté establecida en 'Enviar las filas sin entradas coincidentes a la salida de entradas no coincidentes'."
+                  exclusionGroup="1"
+                  name="Salida de entradas no coincidentes de búsqueda"
+                  synchronousInputId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Inputs[Entrada de búsqueda]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de error de búsqueda]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de búsqueda"
+                  synchronousInputId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Inputs[Entrada de búsqueda]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de error de búsqueda].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de error de búsqueda].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de error de búsqueda].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de error de búsqueda].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Extract Sample Currency Data\División condicional"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="División condicional;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+              description="Enruta filas de datos a diferentes salidas según el contenido de los datos. Se usan condiciones (expresiones de SSIS) para especificar las filas que se van a enrutar. Por ejemplo, se usa para separar los registros que deben limpiarse de los registros listos para ser cargados o para enrutar solamente un subconjunto de registros."
+              name="División condicional"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional]"
+                  description="Entrada en la transformación División condicional"
+                  name="Entrada de división condicional">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional].Columns[NumeroDiaDelAnio]"
+                      cachedDataType="i4"
+                      cachedName="NumeroDiaDelAnio"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroDiaDelAnio]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional].Columns[NumeroDiaDeLaSemana]"
+                      cachedDataType="i4"
+                      cachedName="NumeroDiaDeLaSemana"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroDiaDeLaSemana]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional].Columns[NumeroSemanaDelAnio]"
+                      cachedDataType="i4"
+                      cachedName="NumeroSemanaDelAnio"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroSemanaDelAnio]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional].Columns[Mes]"
+                      cachedDataType="i4"
+                      cachedName="Mes"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Mes]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional].Columns[NombreMes]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="NombreMes"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NombreMes]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional].Columns[Cuatrimestre]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="Cuatrimestre"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Cuatrimestre]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional].Columns[Anio]"
+                      cachedDataType="i4"
+                      cachedName="Anio"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Anio]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional].Columns[NombreDiaDeLaSemana]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="NombreDiaDeLaSemana"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NombreDiaDeLaSemana]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional].Columns[Dia]"
+                      cachedDataType="i4"
+                      cachedName="Dia"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Dia]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional].Columns[LkUp_NombreMes]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="LkUp_NombreMes"
+                      lineageId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NombreMes]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional].Columns[LkUp_NombreDiaDeLaSemana]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="LkUp_NombreDiaDeLaSemana"
+                      lineageId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NombreDiaDeLaSemana]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional].Columns[LkUp_Dia]"
+                      cachedDataType="ui1"
+                      cachedName="LkUp_Dia"
+                      lineageId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_Dia]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional].Columns[LkUp_Mes]"
+                      cachedDataType="ui1"
+                      cachedName="LkUp_Mes"
+                      lineageId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_Mes]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional].Columns[LkUp_Cuatrimestre]"
+                      cachedDataType="ui1"
+                      cachedName="LkUp_Cuatrimestre"
+                      lineageId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_Cuatrimestre]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional].Columns[LkUp_Anio]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="4"
+                      cachedName="LkUp_Anio"
+                      lineageId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_Anio]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional].Columns[LkUp_NumeroDiaDelAnio]"
+                      cachedDataType="i2"
+                      cachedName="LkUp_NumeroDiaDelAnio"
+                      lineageId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NumeroDiaDelAnio]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional].Columns[LkUp_NumeroSemanaDelAnio]"
+                      cachedDataType="ui1"
+                      cachedName="LkUp_NumeroSemanaDelAnio"
+                      lineageId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NumeroSemanaDelAnio]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional].Columns[LkUp_NumeroDiaDeLaSemana]"
+                      cachedDataType="ui1"
+                      cachedName="LkUp_NumeroDiaDeLaSemana"
+                      lineageId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NumeroDiaDeLaSemana]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Extract Sample Currency Data\División condicional.Outputs[Columnas Updateadas]"
+                  description="Salida 1 de la transformación División condicional"
+                  errorOrTruncationOperation="Cálculo"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="Columnas Updateadas"
+                  synchronousInputId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Especifica la expresión. Esta versión de expresión usa identificadores de linaje en lugar de nombres de columna."
+                      name="Expression">(([ISNULL](#{Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NombreMes]}) ? "coso" : #{Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NombreMes]}) != ([ISNULL](#{Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NombreMes]}) ? "coso" : #{Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NombreMes]})) || (([ISNULL](#{Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NombreDiaDeLaSemana]}) ? "coso" : #{Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NombreDiaDeLaSemana]}) != ([ISNULL](#{Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NombreDiaDeLaSemana]}) ? "coso" : #{Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NombreDiaDeLaSemana]})) || (([ISNULL](#{Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Dia]}) ? 0 : #{Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Dia]}) != ([ISNULL](#{Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_Dia]}) ? 0 : #{Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_Dia]})) || (([ISNULL](#{Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Mes]}) ? 0 : #{Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Mes]}) != ([ISNULL](#{Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_Mes]}) ? 0 : #{Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_Mes]})) || (([ISNULL](#{Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Cuatrimestre]}) ? (DT_WSTR,50)(0) : (DT_WSTR,50)(#{Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Cuatrimestre]})) != ([ISNULL](#{Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_Cuatrimestre]}) ? (DT_WSTR,50)(0) : (DT_WSTR,50)(#{Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_Cuatrimestre]}))) || (([ISNULL](#{Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Anio]}) ? (DT_WSTR,50)(0) : (DT_WSTR,50)(#{Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Anio]})) != ([ISNULL](#{Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_Anio]}) ? (DT_WSTR,50)(0) : (DT_WSTR,50)(#{Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_Anio]}))) || (([ISNULL](#{Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroDiaDelAnio]}) ? 0 : #{Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroDiaDelAnio]}) != ([ISNULL](#{Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NumeroDiaDelAnio]}) ? 0 : #{Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NumeroDiaDelAnio]})) || (([ISNULL](#{Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroSemanaDelAnio]}) ? 0 : #{Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroSemanaDelAnio]}) != ([ISNULL](#{Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NumeroSemanaDelAnio]}) ? 0 : #{Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NumeroSemanaDelAnio]})) || (([ISNULL](#{Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroDiaDeLaSemana]}) ? 0 : #{Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroDiaDeLaSemana]}) != ([ISNULL](#{Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NumeroDiaDeLaSemana]}) ? 0 : #{Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda].Columns[LkUp_NumeroDiaDeLaSemana]}))</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Especifica la versión descriptiva de la expresión. Esta versión de expresión usa nombres de columna."
+                      expressionType="Notify"
+                      name="FriendlyExpression">((ISNULL(NombreMes) ? "coso" : NombreMes) != (ISNULL(LkUp_NombreMes) ? "coso" : LkUp_NombreMes)) || ((ISNULL(NombreDiaDeLaSemana) ? "coso" : NombreDiaDeLaSemana) != (ISNULL(LkUp_NombreDiaDeLaSemana) ? "coso" : LkUp_NombreDiaDeLaSemana)) || ((ISNULL(Dia) ? 0 : Dia) != (ISNULL(LkUp_Dia) ? 0 : LkUp_Dia)) || ((ISNULL(Mes) ? 0 : Mes) != (ISNULL(LkUp_Mes) ? 0 : LkUp_Mes)) || ((ISNULL(Cuatrimestre) ? (DT_WSTR,50)(0) : (DT_WSTR,50)(Cuatrimestre)) != (ISNULL(LkUp_Cuatrimestre) ? (DT_WSTR,50)(0) : (DT_WSTR,50)(LkUp_Cuatrimestre))) || ((ISNULL(Anio) ? (DT_WSTR,50)(0) : (DT_WSTR,50)(Anio)) != (ISNULL(LkUp_Anio) ? (DT_WSTR,50)(0) : (DT_WSTR,50)(LkUp_Anio))) || ((ISNULL(NumeroDiaDelAnio) ? 0 : NumeroDiaDelAnio) != (ISNULL(LkUp_NumeroDiaDelAnio) ? 0 : LkUp_NumeroDiaDelAnio)) || ((ISNULL(NumeroSemanaDelAnio) ? 0 : NumeroSemanaDelAnio) != (ISNULL(LkUp_NumeroSemanaDelAnio) ? 0 : LkUp_NumeroSemanaDelAnio)) || ((ISNULL(NumeroDiaDeLaSemana) ? 0 : NumeroDiaDeLaSemana) != (ISNULL(LkUp_NumeroDiaDeLaSemana) ? 0 : LkUp_NumeroDiaDeLaSemana))</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Especifica la posición de la condición en la lista de condiciones que evalúa la transformación. El orden de evaluación es del menor al mayor valor."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Extract Sample Currency Data\División condicional.Outputs[Salida predeterminada de división condicional]"
+                  description="Salida predeterminada de la transformación División condicional"
+                  exclusionGroup="1"
+                  name="Salida predeterminada de división condicional"
+                  synchronousInputId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Extract Sample Currency Data\División condicional.Outputs[Salida de error de división condicional]"
+                  description="Salida de error de la transformación División condicional"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de división condicional"
+                  synchronousInputId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\División condicional.Outputs[Salida de error de división condicional].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Extract Sample Currency Data\División condicional.Outputs[Salida de error de división condicional].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\División condicional.Outputs[Salida de error de división condicional].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Extract Sample Currency Data\División condicional.Outputs[Salida de error de división condicional].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Extract Sample Currency Data\Origen de OLE DB"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
+              description="Origen de OLE DB"
+              name="Origen de OLE DB"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[orders]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT DISTINCT CONVERT(DATE, o_entry_d) AS 'TiempoKey',
+	DATEPART(dy, o_entry_d) AS 'NumeroDiaDelAnio',
+	DATEPART(dw, o_entry_d) AS 'NumeroDiaDeLaSemana',
+	DATEPART(wk, o_entry_d) AS 'NumeroSemanaDelAnio',
+	DATEPART(mm, o_entry_d) AS 'Mes',
+	DATENAME(mm, o_entry_d) AS 'NombreMes',
+	DATENAME(qq, o_entry_d) AS 'Cuatrimestre',
+	Year(o_entry_d) AS 'Anio',
+	DATENAME(dw, o_entry_d) AS 'NombreDiaDeLaSemana',
+	DATEPART(dd, o_entry_d) AS 'Dia'
+FROM orders</property>
+                <property
+                  dataType="System.String"
+                  description="Variable que contiene el comando SQL para ejecutar."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="Asignaciones entre los parámetros del comando SQL y las variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Extract Sample Currency Data\Origen de OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost\SQL17.tpcc]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost\SQL17.tpcc]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB]"
+                  name="Salida de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[TiempoKey]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[TiempoKey]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[TiempoKey]"
+                      name="TiempoKey"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroDiaDelAnio]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[NumeroDiaDelAnio]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroDiaDelAnio]"
+                      name="NumeroDiaDelAnio"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroDiaDeLaSemana]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[NumeroDiaDeLaSemana]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroDiaDeLaSemana]"
+                      name="NumeroDiaDeLaSemana"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroSemanaDelAnio]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[NumeroSemanaDelAnio]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroSemanaDelAnio]"
+                      name="NumeroSemanaDelAnio"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Mes]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Mes]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Mes]"
+                      name="Mes"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NombreMes]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[NombreMes]"
+                      length="30"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NombreMes]"
+                      name="NombreMes"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Cuatrimestre]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Cuatrimestre]"
+                      length="30"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Cuatrimestre]"
+                      name="Cuatrimestre"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Anio]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Anio]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Anio]"
+                      name="Anio"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NombreDiaDeLaSemana]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[NombreDiaDeLaSemana]"
+                      length="30"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NombreDiaDeLaSemana]"
+                      name="NombreDiaDeLaSemana"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Dia]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Dia]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Dia]"
+                      name="Dia"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[TiempoKey]"
+                      dataType="dbDate"
+                      name="TiempoKey" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[NumeroDiaDelAnio]"
+                      dataType="i4"
+                      name="NumeroDiaDelAnio" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[NumeroDiaDeLaSemana]"
+                      dataType="i4"
+                      name="NumeroDiaDeLaSemana" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[NumeroSemanaDelAnio]"
+                      dataType="i4"
+                      name="NumeroSemanaDelAnio" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Mes]"
+                      dataType="i4"
+                      name="Mes" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[NombreMes]"
+                      dataType="wstr"
+                      length="30"
+                      name="NombreMes" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Cuatrimestre]"
+                      dataType="wstr"
+                      length="30"
+                      name="Cuatrimestre" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Anio]"
+                      dataType="i4"
+                      name="Anio" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[NombreDiaDeLaSemana]"
+                      dataType="wstr"
+                      length="30"
+                      name="NombreDiaDeLaSemana" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[Dia]"
+                      dataType="i4"
+                      name="Dia" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[TiempoKey]"
+                      dataType="dbDate"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[TiempoKey]"
+                      name="TiempoKey" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[NumeroDiaDelAnio]"
+                      dataType="i4"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[NumeroDiaDelAnio]"
+                      name="NumeroDiaDelAnio" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[NumeroDiaDeLaSemana]"
+                      dataType="i4"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[NumeroDiaDeLaSemana]"
+                      name="NumeroDiaDeLaSemana" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[NumeroSemanaDelAnio]"
+                      dataType="i4"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[NumeroSemanaDelAnio]"
+                      name="NumeroSemanaDelAnio" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Mes]"
+                      dataType="i4"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Mes]"
+                      name="Mes" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[NombreMes]"
+                      dataType="wstr"
+                      length="30"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[NombreMes]"
+                      name="NombreMes" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Cuatrimestre]"
+                      dataType="wstr"
+                      length="30"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Cuatrimestre]"
+                      name="Cuatrimestre" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Anio]"
+                      dataType="i4"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Anio]"
+                      name="Anio" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[NombreDiaDeLaSemana]"
+                      dataType="wstr"
+                      length="30"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[NombreDiaDeLaSemana]"
+                      name="NombreDiaDeLaSemana" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Dia]"
+                      dataType="i4"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[Dia]"
+                      name="Dia" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Extract Sample Currency Data\Sample OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino de OLE DB"
+              name="Sample OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[dbo].[DimTiempo]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost\SQL17.TPC_DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost\SQL17.TPC_DW]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB]"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].Columns[TiempoKey]"
+                      cachedDataType="dbDate"
+                      cachedName="TiempoKey"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].ExternalColumns[TiempoKey]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[TiempoKey]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].Columns[NumeroDiaDelAnio]"
+                      cachedDataType="i4"
+                      cachedName="NumeroDiaDelAnio"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumeroDiaDelAnio]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroDiaDelAnio]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].Columns[NumeroDiaDeLaSemana]"
+                      cachedDataType="i4"
+                      cachedName="NumeroDiaDeLaSemana"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumeroDiaDeLaSemana]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroDiaDeLaSemana]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].Columns[NumeroSemanaDelAnio]"
+                      cachedDataType="i4"
+                      cachedName="NumeroSemanaDelAnio"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumeroSemanaDelAnio]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroSemanaDelAnio]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].Columns[Mes]"
+                      cachedDataType="i4"
+                      cachedName="Mes"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].ExternalColumns[Mes]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Mes]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].Columns[NombreMes]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="NombreMes"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].ExternalColumns[NombreMes]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NombreMes]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].Columns[Cuatrimestre]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="Cuatrimestre"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].ExternalColumns[Cuatrimestre]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Cuatrimestre]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].Columns[Anio]"
+                      cachedDataType="i4"
+                      cachedName="Anio"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].ExternalColumns[Anio]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Anio]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].Columns[NombreDiaDeLaSemana]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="NombreDiaDeLaSemana"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].ExternalColumns[NombreDiaDeLaSemana]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NombreDiaDeLaSemana]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].Columns[Dia]"
+                      cachedDataType="i4"
+                      cachedName="Dia"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].ExternalColumns[Dia]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Dia]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].ExternalColumns[TiempoKey]"
+                      dataType="dbDate"
+                      name="TiempoKey" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumeroDiaDelAnio]"
+                      dataType="i2"
+                      name="NumeroDiaDelAnio" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumeroSemanaDelAnio]"
+                      dataType="ui1"
+                      name="NumeroSemanaDelAnio" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumeroDiaDeLaSemana]"
+                      dataType="ui1"
+                      name="NumeroDiaDeLaSemana" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].ExternalColumns[NombreMes]"
+                      dataType="wstr"
+                      length="20"
+                      name="NombreMes" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].ExternalColumns[NombreDiaDeLaSemana]"
+                      dataType="wstr"
+                      length="20"
+                      name="NombreDiaDeLaSemana" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].ExternalColumns[Cuatrimestre]"
+                      dataType="ui1"
+                      name="Cuatrimestre" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].ExternalColumns[Anio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="Anio" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].ExternalColumns[Dia]"
+                      dataType="ui1"
+                      name="Dia" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB].ExternalColumns[Mes]"
+                      dataType="ui1"
+                      name="Mes" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Outputs[Salida de error de destino de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de OLE DB"
+                  synchronousInputId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Extract Sample Currency Data\StageUpdates"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Destino de OLE DB"
+              name="StageUpdates"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowset">[StageUpdates_Tiempo]</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Comando SQL para ejecutar."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir datos de caracteres."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica opciones para usar con la carga rápida. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Solo se aplica si está activada la carga rápida."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Extract Sample Currency Data\StageUpdates.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost\SQL17.TPC_DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost\SQL17.TPC_DW]"
+                  description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB]"
+                  errorOrTruncationOperation="Insertar"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].Columns[TiempoKey]"
+                      cachedDataType="dbDate"
+                      cachedName="TiempoKey"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].ExternalColumns[Origen de OLE DB.TiempoKey]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[TiempoKey]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].Columns[NumeroDiaDelAnio]"
+                      cachedDataType="i4"
+                      cachedName="NumeroDiaDelAnio"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumeroDiaDelAnio]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroDiaDelAnio]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].Columns[NumeroDiaDeLaSemana]"
+                      cachedDataType="i4"
+                      cachedName="NumeroDiaDeLaSemana"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumeroDiaDeLaSemana]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroDiaDeLaSemana]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].Columns[NumeroSemanaDelAnio]"
+                      cachedDataType="i4"
+                      cachedName="NumeroSemanaDelAnio"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumeroSemanaDelAnio]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NumeroSemanaDelAnio]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].Columns[Mes]"
+                      cachedDataType="i4"
+                      cachedName="Mes"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].ExternalColumns[Mes]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Mes]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].Columns[NombreMes]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="NombreMes"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].ExternalColumns[NombreMes]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NombreMes]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].Columns[Cuatrimestre]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="Cuatrimestre"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].ExternalColumns[Cuatrimestre]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Cuatrimestre]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].Columns[Anio]"
+                      cachedDataType="i4"
+                      cachedName="Anio"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].ExternalColumns[Anio]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Anio]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].Columns[NombreDiaDeLaSemana]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="NombreDiaDeLaSemana"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].ExternalColumns[NombreDiaDeLaSemana]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[NombreDiaDeLaSemana]" />
+                    <inputColumn
+                      refId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].Columns[Dia]"
+                      cachedDataType="i4"
+                      cachedName="Dia"
+                      externalMetadataColumnId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].ExternalColumns[Dia]"
+                      lineageId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[Dia]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].ExternalColumns[Origen de OLE DB.TiempoKey]"
+                      dataType="dbDate"
+                      name="Origen de OLE DB.TiempoKey" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumeroDiaDelAnio]"
+                      dataType="i4"
+                      name="NumeroDiaDelAnio" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumeroDiaDeLaSemana]"
+                      dataType="i4"
+                      name="NumeroDiaDeLaSemana" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].ExternalColumns[NumeroSemanaDelAnio]"
+                      dataType="i4"
+                      name="NumeroSemanaDelAnio" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].ExternalColumns[Mes]"
+                      dataType="i4"
+                      name="Mes" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].ExternalColumns[NombreMes]"
+                      dataType="wstr"
+                      length="30"
+                      name="NombreMes" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].ExternalColumns[Cuatrimestre]"
+                      dataType="wstr"
+                      length="30"
+                      name="Cuatrimestre" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].ExternalColumns[Anio]"
+                      dataType="i4"
+                      name="Anio" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].ExternalColumns[NombreDiaDeLaSemana]"
+                      dataType="wstr"
+                      length="30"
+                      name="NombreDiaDeLaSemana" />
+                    <externalMetadataColumn
+                      refId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB].ExternalColumns[Dia]"
+                      dataType="i4"
+                      name="Dia" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Extract Sample Currency Data\StageUpdates.Outputs[Salida de error de destino de OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de OLE DB"
+                  synchronousInputId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\StageUpdates.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Extract Sample Currency Data\StageUpdates.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Extract Sample Currency Data\StageUpdates.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Extract Sample Currency Data\StageUpdates.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Extract Sample Currency Data.Paths[Columnas Updateadas]"
+              endId="Package\Extract Sample Currency Data\StageUpdates.Inputs[Entrada de destino de OLE DB]"
+              name="Columnas Updateadas"
+              startId="Package\Extract Sample Currency Data\División condicional.Outputs[Columnas Updateadas]" />
+            <path
+              refId="Package\Extract Sample Currency Data.Paths[Salida de entradas coincidentes de búsqueda]"
+              endId="Package\Extract Sample Currency Data\División condicional.Inputs[Entrada de división condicional]"
+              name="Salida de entradas coincidentes de búsqueda"
+              startId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas coincidentes de búsqueda]" />
+            <path
+              refId="Package\Extract Sample Currency Data.Paths[Salida de entradas no coincidentes de búsqueda]"
+              endId="Package\Extract Sample Currency Data\Sample OLE DB Destination.Inputs[Entrada de destino de OLE DB]"
+              name="Salida de entradas no coincidentes de búsqueda"
+              startId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Outputs[Salida de entradas no coincidentes de búsqueda]" />
+            <path
+              refId="Package\Extract Sample Currency Data.Paths[Salida de origen de OLE DB]"
+              endId="Package\Extract Sample Currency Data\Búsqueda Duplicado.Inputs[Entrada de búsqueda]"
+              name="Salida de origen de OLE DB"
+              startId="Package\Extract Sample Currency Data\Origen de OLE DB.Outputs[Salida de origen de OLE DB]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncar Stages"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{8BA5FD1B-5825-41CC-8AB7-716C0350BB5A}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncar Stages"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{38567482-EB69-496A-88A9-7917FAF745E2}"
+          SQLTask:SqlStatementSource="Truncate Table StageUpdates_Tiempo&#xA;&#xA;Truncate Table StageDeletes_Tiempo" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{6669F375-97C4-4546-AB51-445FFE9F0E46}"
+      DTS:From="Package\Extract Sample Currency Data"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Aplicar Staged Updates" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{7F87C224-99D4-4B93-9E16-20CA2E9A3B15}"
+      DTS:From="Package\Truncar Stages"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 1"
+      DTS:To="Package\Extract Sample Currency Data" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{1A269783-A29F-4DCB-855C-7DBF474B1582}"
+      DTS:From="Package\Aplicar Staged Updates"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 2"
+      DTS:To="Package\Delete Rows" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{456CCAEA-2F65-4ADE-91CE-26B3B179D271}"
+      DTS:From="Package\Delete Rows"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 3"
+      DTS:To="Package\Aplicar Staged Deletes" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="188,42"
+          Id="Package\Aplicar Staged Updates"
+          TopLeft="381.5,224.5" />
+        <NodeLayout
+          Size="220,42"
+          Id="Package\Extract Sample Currency Data"
+          TopLeft="364,127" />
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Truncar Stages"
+          TopLeft="398.5,18.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="474.75,169">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55.5"
+              Start="0,0"
+              End="0,48">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 1]"
+          TopLeft="473.75,60.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,66.5"
+              Start="0,0"
+              End="0,59">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,59" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="138,42"
+          Id="Package\Delete Rows"
+          TopLeft="406.5,329.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 2]"
+          TopLeft="475.5,266.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,63"
+              Start="0,0"
+              End="0,55.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Aplicar Staged Deletes"
+          TopLeft="382.5,428.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 3]"
+          TopLeft="475.25,371.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,57"
+              Start="0,0"
+              End="0,49.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Extract Sample Currency Data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Extract Sample Currency Data\División condicional"
+          TopLeft="550.5,338.5" />
+        <NodeLayout
+          Size="164,42"
+          Id="Package\Extract Sample Currency Data\Origen de OLE DB"
+          TopLeft="228,87" />
+        <NodeLayout
+          Size="144,42"
+          Id="Package\Extract Sample Currency Data\StageUpdates"
+          TopLeft="556.5,444.637162553089" />
+        <NodeLayout
+          Size="174,42"
+          Id="Package\Extract Sample Currency Data\Búsqueda Duplicado"
+          TopLeft="224,192" />
+        <NodeLayout
+          Size="209,42"
+          Id="Package\Extract Sample Currency Data\Sample OLE DB Destination"
+          TopLeft="177,445" />
+        <EdgeLayout
+          Id="Package\Extract Sample Currency Data.Paths[Salida de entradas no coincidentes de búsqueda]"
+          TopLeft="282.416666666667,234">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,211"
+              Start="0,0"
+              End="0,203.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,203.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-106.8890234375,95.65234375,213.778046875,12.1953125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Extract Sample Currency Data.Paths[Salida de entradas coincidentes de búsqueda]"
+          TopLeft="338.666666666667,234">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="297.333333333333,104.5"
+              Start="0,0"
+              End="297.333333333333,97">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.371298405467" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,38.371298405467"
+                    Point2="0,42.371298405467"
+                    Point3="4,42.371298405467" />
+                  <mssgle:LineSegment
+                    End="293.333333333333,42.371298405467" />
+                  <mssgle:CubicBezierSegment
+                    Point1="293.333333333333,42.371298405467"
+                    Point2="297.333333333333,42.371298405467"
+                    Point3="297.333333333333,46.371298405467" />
+                  <mssgle:LineSegment
+                    End="297.333333333333,97" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="48.8476432291667,47.371298405467,199.638046875,12.1953125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Extract Sample Currency Data.Paths[Columnas Updateadas]"
+          TopLeft="632.25,380.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,64.1371625530887"
+              Start="0,0"
+              End="0,56.6371625530887">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.6371625530887" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-58.45123046875,20.3185812765443,116.9024609375,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Extract Sample Currency Data.Paths[Salida de origen de OLE DB]"
+          TopLeft="310.5,129">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,63"
+              Start="0,0"
+              End="0,55.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <AnnotationLayout
+          Text="Validamos que no haya otro registro con la&#xA;misma clave que el registro que se quiere &#xA;insertar en la tabla destino."
+          ParentId="Package\Extract Sample Currency Data"
+          FontInfo="{assembly:Null}"
+          Size="256,72"
+          Id="a4d1b969-d05f-48e8-b432-36c86b5605f2"
+          TopLeft="459,179" />
+        <AnnotationLayout
+          Text="El manejo del Update para la dimensión Tiempo &#xA;no es necesario debido a que se toma como origen &#xA;de datos a las fechas de la columna o_entry_d de &#xA;la tabla orders (de la BBDD tpcc),si updateamos esta &#xA;columna en el origen, al ser tiempoKey la clave de &#xA;la tabla destino, lo tomará como una nueva tupla, &#xA;es decir que no se updateará nada, sino que se &#xA;agregará."
+          ParentId="Package\Extract Sample Currency Data"
+          FontInfo="{assembly:Null}"
+          Size="308,152"
+          Id="ab4cd7ab-df1f-4b4c-9a56-d487cb904aa4"
+          TopLeft="753,331" />
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Extract Sample Currency Data\StageUpdates">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Extract Sample Currency Data\Origen de OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Extract Sample Currency Data\Búsqueda Duplicado">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimTiempo]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Extract Sample Currency Data\Sample OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Delete Rows">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="164,42"
+          Id="Package\Delete Rows\Origen de OLE DB"
+          TopLeft="320.5,43.5" />
+        <NodeLayout
+          Size="125,42"
+          Id="Package\Delete Rows\Búsqueda"
+          TopLeft="341.5,143.5" />
+        <EdgeLayout
+          Id="Package\Delete Rows.Paths[Salida de origen de OLE DB]"
+          TopLeft="403.25,85.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58"
+              Start="0,0"
+              End="0,50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="140,42"
+          Id="Package\Delete Rows\StageDeletes"
+          TopLeft="326.5,256.5" />
+        <EdgeLayout
+          Id="Package\Delete Rows.Paths[Salida de entradas no coincidentes de búsqueda]"
+          TopLeft="400.25,185.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,71"
+              Start="0,0"
+              End="0,63.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,63.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-115.57701171875,23.75,231.1540234375,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Delete Rows\Origen de OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Delete Rows\Búsqueda">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Delete Rows\StageDeletes">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "BI-TPC-OLAP", "BI-TPC-OLAP\BI-TPC-OLAP.dwproj", "{CF4E615C-5E2E-465C-BB88-255C57DF181A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF4E615C-5E2E-465C-BB88-255C57DF181A}.Development|Default.ActiveCfg = Development
+		{CF4E615C-5E2E-465C-BB88-255C57DF181A}.Development|Default.Build.0 = Development
+		{CF4E615C-5E2E-465C-BB88-255C57DF181A}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6FC9B0E-42F4-4D0F-B2E7-68DF30AB0AD8}
+	EndGlobalSection
+EndGlobal

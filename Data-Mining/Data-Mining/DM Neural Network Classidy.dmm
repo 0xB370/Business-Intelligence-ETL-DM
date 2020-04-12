@@ -1,0 +1,289 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2d52f105-d542-4300-926c-9271624f6b0a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DM Neural Network Classidy</ID>
+  <Name>DM Neural Network Classidy</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_FactVentas</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6608" scrolltop="-1177" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="18018" y="13335" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FactVentas" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4763" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00009b12000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FactVentas" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-6608</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-1177</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="6097ef05-99de-4a38-acb1-4a45b1799831">
+    <DataSourceViewID>DM View - TPC DW</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="7a28001b-b9e3-4825-914a-b2202dd37a12">
+      <ID>Cliente Alternate Key</ID>
+      <Name>Cliente Alternate Key</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fb48222c-7772-4d31-8deb-ec77600576f4">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2ac43d39-892a-442e-8022-d0cd71d7b335">
+            <TableID>dbo_FactVentas</TableID>
+            <ColumnID>ClienteAlternateKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="da31844f-9437-4a25-b6e0-791a46367039">
+      <ID>Producto Alternate Key</ID>
+      <Name>Producto Alternate Key</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="68880c1c-1f55-4065-8352-4645d5024c65">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c61b0090-3a32-4c1f-9007-0cbacf577af8">
+            <TableID>dbo_FactVentas</TableID>
+            <ColumnID>ProductoAlternateKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b1561293-c986-4676-abb5-259547f60932">
+      <ID>Almacen Key</ID>
+      <Name>Almacen Key</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8aefc9db-2f22-4d88-b24f-77a4246e354e">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cf5240b8-2f61-44a2-b5ca-567a1883a2b0">
+            <TableID>dbo_FactVentas</TableID>
+            <ColumnID>AlmacenKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="fb2470b1-b7ec-4dfb-9eb1-3970416325d3">
+      <ID>Cantidad</ID>
+      <Name>Cantidad</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b9c0e9eb-d3e5-457a-b0d5-a94e2305c55f">
+          <DataType>SmallInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="11f4e9fd-3718-48fd-9897-9ad7c7a6d214">
+            <TableID>dbo_FactVentas</TableID>
+            <ColumnID>Cantidad</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ac0c1a92-4055-4cd0-9e46-890ca901a7ef">
+      <ID>Cliente Key</ID>
+      <Name>Cliente Key</Name>
+      <Type>Long</Type>
+      <Content>Discretized</Content>
+      <DiscretizationMethod>Automatic</DiscretizationMethod>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e71b1cd7-c109-487e-8df5-adb1d011d0af">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e3f770f3-6691-441e-aaa7-c17986e005b3">
+            <TableID>dbo_FactVentas</TableID>
+            <ColumnID>ClienteKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9faf6684-4a4c-4be3-84a9-494ddedda5e3">
+      <ID>Distrito Key</ID>
+      <Name>Distrito Key</Name>
+      <Type>Long</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="46b5d2e4-771b-4f0a-bb78-7982b7f758e2">
+          <DataType>UnsignedTinyInt</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="13d3d147-a9d1-48c2-8739-e9ade0fd45f6">
+            <TableID>dbo_FactVentas</TableID>
+            <ColumnID>DistritoKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="268b3cea-176e-43ea-8164-5663e91f2126">
+      <ID>Numero Orden De Venta</ID>
+      <Name>Numero Orden De Venta</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f40905ea-45d0-44d3-af76-5772a2e46000">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5ee21bda-5b5f-4930-ab95-7641a5e59eee">
+            <TableID>dbo_FactVentas</TableID>
+            <ColumnID>NumeroOrdenDeVenta</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="893ab818-4393-4844-9ac1-523306a14d86">
+      <ID>Producto Key</ID>
+      <Name>Producto Key</Name>
+      <Type>Long</Type>
+      <Content>Discretized</Content>
+      <DiscretizationMethod>Automatic</DiscretizationMethod>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="19318a81-93f3-40e7-be31-325b56fea679">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="46231d26-ff2a-4627-b9b8-c64f3eed053f">
+            <TableID>dbo_FactVentas</TableID>
+            <ColumnID>ProductoKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c3aff959-85bc-4127-8ba5-a68aa575effa">
+      <ID>Tiempo Key</ID>
+      <Name>Tiempo Key</Name>
+      <Type>Date</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a68c9d27-2b46-4994-abc8-6fcaa3ee3e68">
+          <DataType>Date</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0a45cdf0-57dd-414a-ae15-e378205469e1">
+            <TableID>dbo_FactVentas</TableID>
+            <ColumnID>TiempoKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="49b5a2c4-e3b6-474b-97a8-c813d0ba2a32">
+      <ID>DMV_Neural_Network_Classify</ID>
+      <Name>DMV_Neural_Network_Classify</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Neural_Network</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="f7234497-c363-4f0b-83a1-7d4fc0103aea">
+          <ID>Almacen Key</ID>
+          <Name>Almacen Key</Name>
+          <SourceColumnID>Almacen Key</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="18e55173-8f57-40dd-8bb8-1a9b6911ceeb">
+          <ID>Cantidad</ID>
+          <Name>Cantidad</Name>
+          <SourceColumnID>Cantidad</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="846acc28-4801-4ee4-8c82-2d216d468f79">
+          <ID>Cliente Key</ID>
+          <Name>Cliente Key</Name>
+          <SourceColumnID>Cliente Key</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="d621a057-ac13-490f-b1f0-f2d091770b96">
+          <ID>Distrito Key</ID>
+          <Name>Distrito Key</Name>
+          <SourceColumnID>Distrito Key</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="02238573-bd73-4cb6-b8c1-c91ac0278ae4">
+          <ID>Numero Orden De Venta</ID>
+          <Name>Numero Orden De Venta</Name>
+          <SourceColumnID>Numero Orden De Venta</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="d6752f1b-1cdd-4485-b871-ece887d74fbd">
+          <ID>Producto Key</ID>
+          <Name>Producto Key</Name>
+          <SourceColumnID>Producto Key</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+        </Column>
+        <Column dwd:design-time-name="107259ee-8732-42aa-b6bb-74d593212403">
+          <ID>Tiempo Key</ID>
+          <Name>Tiempo Key</Name>
+          <SourceColumnID>Tiempo Key</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="140b62a5-1c2c-4c3d-a648-9d97346193f5">
+          <ID>Producto Alternate Key</ID>
+          <Name>Producto Alternate Key</Name>
+          <SourceColumnID>Producto Alternate Key</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="86acab52-f200-4601-807c-f11346eea5c5">
+          <ID>Cliente Alternate Key</ID>
+          <Name>Cliente Alternate Key</Name>
+          <SourceColumnID>Cliente Alternate Key</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>

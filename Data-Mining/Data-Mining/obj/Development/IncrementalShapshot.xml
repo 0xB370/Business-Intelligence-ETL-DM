@@ -1,0 +1,75 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Lab4</Database>
+    <Server>EQUIPOMONY\SQL17</Server>
+    <ConnectionString>Data Source=EQUIPOMONY\SQL17;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>7IWNsvhP/Rv20qYu1qddl+xWBc4=20/11/2019 11:34:38 a. m.20/11/2019 11:34:37 a. m.</TimeStamp>
+        <ID>
+          <String>DM - TPC DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>s7WJ4BrIy/qElcdHGrwNoS3r6a8=24/11/2019 2:25:26 p. m.20/11/2019 11:36:00 a. m.</TimeStamp>
+        <ID>
+          <String>DM View - TPC DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>DG5z4OMzHQGu3EkPmputtK4GHAk=21/11/2019 1:19:34 p. m.21/11/2019 1:19:34 p. m.</TimeStamp>
+        <ID>
+          <String>DM TimeSeries FC</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>RES7/uyeevzoDqc/CUqfFA2aKA8=24/11/2019 5:59:56 p. m.20/11/2019 12:24:49 p. m.</TimeStamp>
+        <ID>
+          <String>Prediccion Ventas Dia Siguiente</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>2sb0VOotT3SjmO2IIt5o07B3MM4=24/11/2019 7:01:03 p. m.24/11/2019 2:10:44 p. m.</TimeStamp>
+        <ID>
+          <String>DM Neural Network Classidy</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>T8Z/bwNNZxf1yFxFzUQFXIdQeOo=24/11/2019 7:33:15 p. m.24/11/2019 7:01:02 p. m.</TimeStamp>
+        <ID>
+          <String>DM Neural Net Classify</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>wuOFt9YhNcr+i69U77QZvwSQLkU=20/11/2019 11:20:47 a. m.20/11/2019 11:20:47 a. m.</TimeStamp>
+      <ID>
+        <String>Lab4</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2019-11-24T22:55:05.853333Z</LastDeployed>
+</DeploymentSnapshot>

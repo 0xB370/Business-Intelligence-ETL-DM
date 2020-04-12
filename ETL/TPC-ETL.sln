@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "TPC-ETL", "TPC-ETL\TPC-ETL.dtproj", "{29A1296B-DEBF-4CD2-8580-9F088C692DC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29A1296B-DEBF-4CD2-8580-9F088C692DC0}.Development|Default.ActiveCfg = Development
+		{29A1296B-DEBF-4CD2-8580-9F088C692DC0}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9773C3D0-12D0-4E86-840F-AE3D86094D5C}
+	EndGlobalSection
+EndGlobal
